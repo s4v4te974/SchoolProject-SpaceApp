@@ -1,0 +1,11 @@
+<h2>{{ villeSaisie | uppercase }}</h2>
+
+<div id="formSaisie" >
+      <label for="nomVille">Saisir une ville </label>
+
+      <!-- Création d'un event binding (récupération de ce qui a été saisie via la méthode afficherCarteParent
+        dans input lors du chargement de l'appli-->
+      <input #name (keyup.enter)="afficherCarteParent(name.value)"
+        placeholder="Saisir une ville">
+      <button (click)="afficherCarteParent(name.value)">Ok</button>
+</div>

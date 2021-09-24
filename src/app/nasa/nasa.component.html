@@ -1,0 +1,67 @@
+<div class="intro">
+  <div class="menu-nasa col-lg-4">
+    <h1 class="h1-nasa">ROCKET LAB</h1>
+    <label class="label-nasa" for="rocket-select">Choose a rocket : </label>
+    <select class="select-nasa" class="form-select" (change)=selectValue($event)>
+      <option value="">--Please choose a rocket--</option>
+      <option *ngFor='let item of this.dataView; let i = index' value="{{i}}"> {{item.flight_number}}
+        -{{item.mission_name}} </option>
+    </select>
+    <div *ngIf="selectedOption != null">
+      <button class="btn" style="background-color:#326b9a;
+      color:white;
+      margin:15px " (click)=afficherInfo()> afficher info</button>
+    </div>
+  </div>
+
+  <div *ngIf="showInfo" class="row" style="border-radius: 10px;">
+    <div class="info-nasa">
+      <video autoplay="true" loop="loop" poster="finVideo.png" id="decollage">
+        <source src="assets/video/decollage.webm" type="video/webm">
+        <source src="assets/video/decollage.mp4" type="video/mp4">
+      </video>
+      <div class="div-nasa">
+        <hr>
+        <div id="text-patch">
+          <div *ngIf="missionpatchOK ;else default" class="col-lg-4 col-sm-12 col-md-12"
+            style="margin:auto; text-align:center">
+            <img src="{{ missionPatch }}" />
+          </div>
+
+          <ng-template #default>
+            <div class="col-lg-4 col-sm-12 col-md-12" style="margin:auto; text-align:center">
+              <img src="assets/img/notfound1.png" />
+            </div>
+          </ng-template>
+
+          <div class="col-lg-8 col-sm-12 col-md-12" style="text-align: justify;">
+            <h2><span>Mission Name :</span> {{ missionName }}</h2>
+            <h3><span>Rocket Name :</span> {{ rocketName }}</h3>
+            <!-- Modification de la date grace au pipe '|' et on lui donne le format que l'on veut -->
+            <p><span>Launch Date :</span> {{ dateLancement | date: 'dd/MM/yyyy h:mm'}} </p>
+            <p><span>Launch Site :</span> {{ launchSite }}</p>
+            <!-- Si le launchSuccess est true on affiche success sinon on affiche Failed  -->
+            <p *ngIf="launchSuccess; else Nok"><span>Launch Success :</span> {{ 'Success' }}</p>
+            <p>
+              <ng-template #Nok><span>Launch Success : </span>{{ 'Failed' }}</ng-template>
+            </p>
+            <span>Details Mission :</span>
+            <p> {{ detailsMission }}</p>
+          </div>
+      </div>
+        <hr>
+        <div class="div-lien-nasa">
+          <div class="col-sm-6 col-lg-6">
+            <a target="_blank" href="{{ video }}"><img class="img-lien" src="assets/img/RocketLab.png" width="400"
+                height="250" alt="Link to video" /></a>
+          </div>
+          <div class="col-sm-6 col-lg-6" style="text-align: right;">
+            <a target="_blank" href="{{ link }}"><img class="img-lien" src="assets/img/iss.png" width="400" height="250"
+                alt="Link to video" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

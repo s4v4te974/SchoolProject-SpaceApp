@@ -1,0 +1,57 @@
+<div class="intro">
+
+  <div style="text-align:center">
+    <h1>POLLUTION</h1>
+
+  <!--(afficherChild) est appelé par le emit dans le recherche-ville-ts-->
+  <app-recherche-ville [aff]="aff" (afficherChild)="afficherParent($event)"></app-recherche-ville>
+
+  <div  *ngIf="error ==''; else erreur">
+    <!-- Directive structurelle : if ville est correcte, affichage du tableau -->
+    <table *ngIf=villeSaisie>
+      <thead>
+        <tr>
+          <th>POLLUANTS</th>
+          <th>PM25</th>
+          <th>O3</th>
+          <th>CO</th>
+          <th>NO2</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td id="iddescription">Description</td>
+          <td>{{ polluantsVille.description_pm25 }}</td>
+          <td>{{ polluantsVille.description_O3 }}</td>
+          <td>{{ polluantsVille.description_CO }}</td>
+          <td>{{ polluantsVille.description_NO2 }}</td>
+        </tr>
+        <tr>
+          <td>Valeur</td>
+          <td>{{ polluantsVille.value_pm25 }}</td>
+          <td>{{ polluantsVille.value_O3 }}</td>
+          <td>{{ polluantsVille.value_CO }}</td>
+          <td>{{ polluantsVille.value_NO2 }}</td>
+        </tr>
+        <tr>
+          <td>Mention</td>
+          <td>{{ polluantsVille.category_pm25 }}</td>
+          <td>{{ polluantsVille.category_O3 }}</td>
+          <td>{{ polluantsVille.category_CO }}</td>
+          <td>{{ polluantsVille.category_NO2 }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Déclaration du conteneur de la carte avec l'id "frugalmap" -->
+  <div style=" height: 600px; width: 100%" id="frugalmap"></div>
+
+  <ng-template #erreur>
+    <h2>{{ error }}</h2>
+  </ng-template>
+
+</div>
+
+        </div>

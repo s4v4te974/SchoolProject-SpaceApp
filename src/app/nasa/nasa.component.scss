@@ -1,0 +1,41 @@
+.info-nasa video {
+    position: absolute;
+    width: 100%;
+    margin-top: 27%;
+    left: 50%;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    transition: 1s opacity;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+
+#text-patch {
+    display:flex;
+}
+
+@media screen and (max-width: 1000px) {
+    #text-patch {
+      display:block;
+      clear:both;
+    }
+  }
+
+.info-nasa .div-nasa {
+    z-index: 1;
+}
+
+img {
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+img:hover {
+filter: brightness(100%);
+-webkit-filter: brightness(100%);
+}
+
+.row {
+    z-index: 1;
+margin-bottom: 20px;
+}
+

@@ -1,0 +1,115 @@
+[
+    {
+        "nom": "PUECH",
+        "prenom": "Alain",
+        "photo": "../assets/Photos/Photosw7/Alain.jpg",
+        "groupe": "DWWM-7",
+        "module": "Free to Play",
+        "commentaire": "Hello, je suis le GB !"
+    },
+    {
+        "nom": "ROUSTAING",
+        "prenom": "Mickaël",
+        "photo": "../assets/Photos/Photosw7/Mickael.jpg",
+        "groupe": "DWWM-7",
+        "module": "Thème BS",
+        "commentaire": "Roustaing, 50 pompes !"
+    },
+    {
+        "nom": "SOULIÉ",
+        "prenom": "Rosalie",
+        "photo": "../assets/Photos/Photosw7/Rosalie.jpg",
+        "groupe": "DWWM-7",
+        "module": "Nasa",
+        "commentaire": "In goat we trust"
+    },
+    {
+        "nom": "MARCHANDET",
+        "prenom": "Jimmy",
+        "photo": "../assets/Photos/Photosw7/Jimmy.jpg",
+        "groupe": "DWWM-7",
+        "module": "Free to Play",
+        "commentaire": "Il ne faut pas croire tout ce que vous voyez sur internet - Albert Einstein"
+    },
+    {
+        "nom": "GEORGES",
+        "prenom": "Pierre",
+        "photo": "../assets/Photos/Photosw7/Pierre.jpg",
+        "groupe": "DWWM-7",
+        "module": "Free to Play",
+        "commentaire": "No music No life => https://youtu.be/mLwwCXk4qR0"
+
+    },
+    {
+        "nom": "HUE",
+        "prenom": "Florian",
+        "photo": "../assets/Photos/Photosw7/Florian.jpg",
+        "groupe": "DWWM-7",
+        "module": "Thème BS",
+        "commentaire": "Hello"
+    },
+    {
+        "nom": "SHERPA",
+        "prenom": "Cyril",
+        "photo": "../assets/Photos/Photosw7/Cyril.jpg",
+        "groupe": "DWWM-7",
+        "module": "Pollution",
+        "commentaire": "Quand on change le code, on prévient ! Darius"
+    },
+    {
+        "nom": "Cabrol",
+        "prenom": "Sandrine",
+        "photo": "../assets/Photos/Photoscda7/Sandrine.jpg",
+        "groupe": "CDA-7",
+        "module": "Pollution",
+        "commentaire": "Spice up your life !!"
+    },
+    {
+        "nom": "Barreh",
+        "prenom": "Farhan",
+        "photo": "../assets/Photos/Photoscda7/Farhan.jpg",
+        "groupe": "CDA-7",
+        "module": "Pollution",
+        "commentaire": "Hello"
+    },
+    {
+        "nom": "Ducournau",
+        "prenom": "Emmanuel",
+        "photo": "../assets/Photos/Photoscda7/Emmanuel.jpg",
+        "groupe": "CDA-7",
+        "module": "Pollution",
+        "commentaire": "Hello"
+    },
+    {
+        "nom": "Bergue",
+        "prenom": "Jules",
+        "photo": "../assets/Photos/Photoscda7/Jules.jpg",
+        "groupe": "CDA-7",
+        "module": "Pollution",
+        "commentaire": "Hello"
+    },
+    {
+        "nom": "Clavier",
+        "prenom": "Jérôme",
+        "photo": "../assets/Photos/Photoscda7/Jérôme.jpg",
+        "groupe": "CDA-7",
+        "module": "Nasa",
+        "commentaire": "Hello"
+    },
+    {
+        "nom": "Ramuscello",
+        "prenom": "Romain",
+        "photo": "../assets/Photos/Photoscda7/Romain.jpg",
+        "groupe": "CDA-7",
+        "module": "Nasa",
+        "commentaire": "Hello"
+    },
+    {
+        "nom": "Kouotze",
+        "prenom": "Stephane",
+        "photo": "../assets/Photos/Photoscda7/Stephane.jpg",
+        "groupe": "CDA-7",
+        "module": "Nasa",
+        "commentaire": "Hello"
+    }
+]

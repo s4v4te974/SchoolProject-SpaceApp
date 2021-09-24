@@ -1,0 +1,15 @@
+<div class="intro">
+  <div>
+  <ul *ngFor='let item of this.dataView;' class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-xs-12 list-group">
+    <div class="jumbotron">
+    <li class="list-group-item" style="background-color: #05212B; text-align:center;"><img style="border-radius: 10px" src="{{item.photo}}"></li>
+    <li class="list-group-item" style="background-color: rgb(187, 214, 224);text-align:center"> {{item.nom | uppercase}} </li>
+    <li class="list-group-item" style="background-color: #05212B;text-align:center; color: white"> {{item.prenom}} </li>
+    <li class="list-group-item" style="background-color: rgb(187, 214, 224);text-align:center"> {{item.groupe}} </li>
+    <li class="list-group-item" style="background-color: #05212B;text-align:center; color: white"> {{item.module}} </li>
+    <li class="list-group-item" style="background-color: rgb(187, 214, 224);text-align:center"> {{item.commentaire}} </li>
+  </div>
+  <br>
+  </ul>
+</div>
+</div>

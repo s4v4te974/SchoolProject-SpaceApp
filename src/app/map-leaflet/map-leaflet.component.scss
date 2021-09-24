@@ -1,0 +1,43 @@
+
+h1{
+    background-color: #05212b;
+    padding: 1% 0;
+    color: white;
+}
+
+table, th, td{
+    border : solid 1px black;
+}
+
+table{
+    width : 70%;
+    margin : 2% auto;
+    border-collapse : collapse;
+    background-color: rgb(187, 214, 224);
+    color: black;
+}
+
+thead{
+    background-color: #05212b;
+    color: white;
+}
+
+th{
+    padding : 1% 0%;
+}
+
+h2{
+    color: white;
+}
+
+#frugalmap{
+    z-index: 1;
+}
+
+@media (max-width: 768px){
+    table{
+        width:100%;
+    }
+}
+
+

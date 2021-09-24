@@ -1,0 +1,51 @@
+<div class="intro">
+    <h1 style="color: white; text-align: center;">Free to Play's Game list</h1>
+
+    <div style="text-align:center">
+        <select (change)=selectValue($event) class="form-select" aria-label="Default select example" style="width: 200px; display: initial">
+            <option value="">Genres</option>
+            <!--     <option *ngFor='let item of this.dataView; let i = index' value="{{i}}"> {{item.genre}} </option> -->
+            <option value="mmorpg">MMORPG</option>
+            <option value="shooter">Shooter</option>
+            <option value="mmo">MMO</option>
+            <option value="social">Social</option>
+            <option value="card">Card Game</option>
+            <option value="moba">MOBA</option>
+            <option value="fighting">Fighting</option>
+            <option value="strategy">Strategy</option>
+            <option value="racing">Racing</option>
+            <option value="sports">Sports</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="battle-royale">Battle Royale</option>
+            <option value="action-rpg">Action RPG</option>
+        </select>
+    </div>
+   <br>
+    <div *ngIf="selectedOption != null" style="text-align:center">
+        <button (click)=afficherInfo() type="button" class="btn btn-light">Show games</button>
+    </div>
+    <br>
+    <div *ngIf="showInfo">
+        <div class="row justify-content-md-center">
+            <ul *ngFor='let item of this.dataView;' class=" col-xs-12 col-sm-12 col-md-6 col-lg-4 list-group">
+                <li class="list-group-item" style="background-color: #05212B; color: white"><b>{{item.title | uppercase}}</b></li>
+                <li class="list-group-item" style="background-color: rgb(187, 214, 224)">Genre : {{item.genre}}</li>
+                <li class="list-group-item" style="background-color:#05212b; color: white">Platform : {{item.platform}}
+                </li>
+                <li class="list-group-item" style="background-color: rgb(187, 214, 224)"> Publisher : {{item.developer}}
+                </li>
+                <li class="list-group-item" style="background-color:#05212b; color: white">Release date :
+                    {{item.release_date | date: 'dd/MM/yyyy'}}</li>
+                <img src="{{item.thumbnail}}">
+                <li class="list-group-item" style="background-color:#05212b; color: white">
+                    <i>{{item.short_description}}</i>
+                </li>
+                <li class="list-group-item" style="background-color: rgb(187, 214, 224)"><a
+                        href="{{item.game_url}}">Official
+                        website</a></li>
+                        <hr>
+                <br>
+            </ul>
+        </div>
+    </div>
+</div>
