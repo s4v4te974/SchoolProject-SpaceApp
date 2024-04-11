@@ -1,33 +1,29 @@
-## School project with Angular
-
-## Disclaimer 
----
-
-This project was separate in 3 different team :
- - One team was responsible of the general overview and the movie part
- - Another team was responsible of the city search
- - my team was responsible of the Rocketlabs Part
-
+- I am redoIng this, check : [https://github.com/s4v4te974/Braderie](https://github.com/s4v4te974/Braderie)
 
 ## Run the project
----
-The project was build with Angular 11, might be some problem with newer Angular version
-
- - Download it
- - Open it with Visual studio Code (or any IDE)
- - Open a terminal a the root of the project
- - Run npm install
- - When install is done, run npm start
- - Browse to the open port (by default 4200)
-
-## Partie RocketLabs
 ***
 
- - This part was build to give access to all rocketlabs launch
+The project was build with java 8, might be some problem with newer Angular version
 
-### Visual part:
- - You can choose a specific launch, and browse information about it.
+- Download it
+- Open it with your IDE (personnaly, I use IntelliJ)
+- launch Maven clean Install
+- Start a new spring configuration 
+- Browse to the open port (by default 8080)
+
+## Explanation
+***
+
+- So, as a Ecommerce webSite, it allow the consumer to browse and navigate, select article and save it to a cart.
+- It include a Admin part to manipulate the articles.
 
 ### Code part
- - The service call an API (public) to gather information
- - On this stream, we map the response and show it in the user interface 
+***
+
+- API build with layer using spring boot
+  - Repository, Service, Controller
+
+### Further modification
+---
+
+None, it is in rebuilt
