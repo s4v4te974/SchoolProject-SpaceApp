@@ -1,4 +1,4 @@
-## School Angular project
+## School project with Angular
 
 ## Disclaimer 
 ---
