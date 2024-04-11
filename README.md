@@ -1,3 +1,10 @@
+## School Full stack project
+
+## Disclaimer
+***
+
+- This project was to build a ecommerce website, using Spirng data, Spring MVC, Java 8
+- This is the backend
 - I am redoIng this, check : [https://github.com/s4v4te974/Braderie](https://github.com/s4v4te974/Braderie)
 
 ## Run the project
