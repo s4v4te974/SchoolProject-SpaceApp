@@ -8,7 +8,7 @@
 - I am redoIng this, check : [https://github.com/s4v4te974/Braderie](https://github.com/s4v4te974/Braderie)
 
 ## Run the project
-***
+---
 
 The project was build with java 8, might be some problem with newer Angular version
 
